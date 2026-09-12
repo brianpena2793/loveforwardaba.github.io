@@ -58,3 +58,157 @@
   padding-top: 12px;
   padding-bottom: 12px;
 }
+/* =================================
+   MEET THE TEAM - FINAL LAYOUT
+   ================================= */
+
+.team-hero {
+  background: linear-gradient(135deg, var(--cream), #ffffff 75%);
+  padding: 65px 0 35px;
+}
+
+.team-heading {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.team-heading h1 {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  margin-bottom: 15px;
+}
+
+.team-heading p {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #56636c;
+}
+
+
+/* MAIN TEAM AREA */
+
+.team-section {
+  padding: 55px 0 90px;
+}
+
+.team-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 70px !important;
+  align-items: start;
+}
+
+
+/* ONE OWNER */
+
+.team-member {
+  display: grid !important;
+  grid-template-columns: 260px minmax(0, 1fr) !important;
+  gap: 32px !important;
+  align-items: center !important;
+}
+
+
+/* OWNER PHOTO */
+
+.team-photo {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+  background: var(--mist);
+  box-shadow: var(--shadow);
+}
+
+.team-photo img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+
+/* OWNER BIO */
+
+.team-bio {
+  min-width: 0;
+}
+
+.team-bio h2 {
+  font-size: 1.75rem !important;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+
+.team-title {
+  display: block;
+  margin-bottom: 18px;
+
+  color: var(--gold);
+
+  font-size: 0.78rem;
+  font-weight: 900;
+
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.team-bio p {
+  margin: 0;
+  color: #4f5e68;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.team-line {
+  width: 45px;
+  height: 4px;
+  margin-top: 22px;
+
+  background: var(--gold);
+  border-radius: 999px;
+}
+
+
+/* BOTTOM SECTION */
+
+.team-closing {
+  background: var(--mist);
+  padding: 55px 0;
+  text-align: center;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1200px) {
+
+  .team-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .team-member {
+    grid-template-columns: 280px 1fr !important;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .team-member {
+    grid-template-columns: 1fr !important;
+  }
+
+  .team-photo {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .team-photo img {
+    height: 420px;
+  }
+
+}
