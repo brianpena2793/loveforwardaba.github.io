@@ -224,3 +224,15 @@
   opacity: 1;
   transform: translateY(0);
 }
+/* Center contact section after removing blue card */
+.contact-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
