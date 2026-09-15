@@ -236,3 +236,11 @@
     margin: 0 auto;
     text-align: left;
 }
+.team-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 24px;
+}
