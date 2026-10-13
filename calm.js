@@ -4,7 +4,7 @@ if (menuButton && navigation) {
   function setMenu(open) {
     navigation.classList.toggle('open', open);
     menuButton.setAttribute('aria-expanded', String(open));
-    menuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    menuButton.setAttribute('aria-label', document.documentElement.lang === 'es' ? (open ? 'Cerrar menú' : 'Abrir menú') : (open ? 'Close navigation' : 'Open navigation'));
   }
   menuButton.addEventListener('click', () => setMenu(!navigation.classList.contains('open')));
   navigation.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
