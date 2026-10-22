@@ -30,3 +30,17 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #49
 /* Upcoming service areas in the existing contact panel. */
 .contact-panel .service-area-soon{display:block;margin-top:8px;padding:10px 14px;border-left:3px solid var(--gold);border-radius:0 10px 10px 0;background:var(--cream);color:var(--navy);font-size:15px}
 @media(max-width:580px){.contact-panel .service-area-soon{border-left:0;border-top:3px solid var(--gold);border-radius:0 0 10px 10px}}
+
+/* Privacy notices use the existing navy, gold, and cream palette. */
+.privacy-links{grid-column:1/-1;gap:12px 24px;margin-top:8px}
+.contact-panel .privacy-note{font-size:14px;line-height:1.6;margin:20px auto 0;max-width:590px}
+.privacy-note a,.legal-copy a{text-decoration:underline;text-underline-offset:3px}
+.legal-intro{background:var(--cream);border-radius:24px;padding:36px;margin-top:20px;text-align:left}
+.legal-intro h1{font-size:clamp(34px,4.5vw,54px)}
+.legal-copy{max-width:860px;margin:36px auto 56px;overflow-wrap:anywhere}
+.legal-copy section{margin-top:30px}.legal-copy h2{font-size:27px;margin-bottom:14px}
+.legal-copy p,.legal-copy ul,.legal-copy ol{font-size:16px;line-height:1.8;margin-bottom:16px}
+.legal-copy li{margin-bottom:10px}.legal-contact,.draft-banner{padding:22px;border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:12px;background:var(--cream);margin:24px 0}
+.legal-copy .draft-banner{background:var(--blush)}
+@media(max-width:580px){.legal-intro{padding:25px}.legal-copy{margin-block:28px 40px}.legal-copy h2{font-size:24px}}
+@media print{.legal-intro{padding:0;background:none}.legal-copy{max-width:none;margin:20px 0}.legal-copy section{break-inside:auto}a{color:#000}}
